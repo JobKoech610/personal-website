@@ -66,13 +66,15 @@ display: inline;
 }
 
 .profile-img{
-    position:relative
+    position:relative;
+    margin-top: 2rem;
+    
 }
 
 .profile-img>img{
     position: absolute;
     left: 50rem;
-    bottom: 0.5rem;
+    bottom: 0rem;
 }
 
 .work{
@@ -80,6 +82,7 @@ display: inline;
     left: 60rem;
     margin-bottom: 20px;
     border: none;
+    padding: 0.5rem;
 }
 
 hr{
@@ -109,11 +112,11 @@ display: inline;
     bottom: 5rem;
 }
 
-.quote>h3{
+/* .quote>h3{
     position: relative;
     left: 5rem;
     bottom: 1rem;
-}
+} */
 
 .coding-img{
     position:relative;
@@ -121,7 +124,7 @@ display: inline;
 .coding-img>img{
     position: absolute;
     left: 50rem;
-    bottom: 0.5rem;
+    bottom: 0.3rem;
 }
 
 .Background>h2{

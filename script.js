@@ -9,9 +9,10 @@ input.addEventListener('click', function() {
 
 
 //text transform
-const text = document.querySelector(".quote>h3");
+
+const text = document.querySelector(".quote-1");
 const strText = text.textContent;
-const splitText = strText.split("");
+const splitText = strText.split(" "+" "); // split text by spaces
 text.textContent = "";
 
 for(let i=0; i< splitText.length; i++){
@@ -19,7 +20,7 @@ for(let i=0; i< splitText.length; i++){
 }
 
 let char = 0;
-let timer = setInterval(onTick, 500);
+let timer = setInterval(onTick, 1000);
 
 function onTick(){
     const span = text.querySelectorAll('span')[char];
@@ -39,8 +40,8 @@ function complete(){
 
 //onmouseover
 function bigImg(x) {
-    x.style.height = "200px";
-    x.style.width = "290px";
+    x.style.height = "180px";
+    x.style.width = "270px";
   }
  
   function normalImg(x) {
