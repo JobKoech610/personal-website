@@ -16,7 +16,7 @@ const splitText = strText.split(" "+" "); // split text by spaces
 text.textContent = "";
 
 for(let i=0; i< splitText.length; i++){
-    text.innerHTML += "<span>" + " " + splitText[i] + "</span>";
+    text.innerHTML += "<span><i>" + " " + splitText[i] + "</i></span>";
 }
 
 let char = 0;
