@@ -9,18 +9,17 @@ input.addEventListener('click', function() {
 
 
 //text transform
-
-const text = document.querySelector(".quote-1");
+const text = document.querySelector(".quote>h3");
 const strText = text.textContent;
-const splitText = strText.split(" "+" "); // split text by spaces
+const splitText = strText.split("");
 text.textContent = "";
 
 for(let i=0; i< splitText.length; i++){
-    text.innerHTML += "<span><i>" + " " + splitText[i] + "</i></span>";
+    text.innerHTML += "<span>" + " " + splitText[i] + "</span>";
 }
 
 let char = 0;
-let timer = setInterval(onTick, 1000);
+let timer = setInterval(onTick, 500);
 
 function onTick(){
     const span = text.querySelectorAll('span')[char];
@@ -40,8 +39,8 @@ function complete(){
 
 //onmouseover
 function bigImg(x) {
-    x.style.height = "180px";
-    x.style.width = "270px";
+    x.style.height = "160px";
+    x.style.width = "290px";
   }
  
   function normalImg(x) {
